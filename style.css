@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+.wrapper{
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper header{
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrapper form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}   
+.wrapper form .field label{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.wrapper form .field input{
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.wrapper form .field input:focus{
+    border-color: #007bff;
+    outline: none;
+}
+.wrapper form .field button{
+    height: 40px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wrapper form .field button:hover{
+    background: #0056b3;
+}
+.wrapper form .field .error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.wrapper form .field .success{
+    color: green;
+    font-size: 12px;
+    margin-top: 5px;
+} */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;   
+    align-items: center;   
+    flex-wrap: wrap;
+}
+.music-player {
+    width: 300px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 20px;
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    color: #f53192;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.song-img{
+    width: 100%;
+    border-radius: 10px;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.music-player h1{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.music-player p{
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #f53192;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 15px rgba(255,26,26,0.1);
+
+}   
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #f53192;
+    box-shadow: 0 10px 10px rgba(255,26,26,0.22); 
+    cursor: pointer;
+    margin: 20px;
+
+
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #f53192;
+    color: #fff;
+}
